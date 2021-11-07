@@ -1,0 +1,5 @@
+To Login AWS Server
+ssh -i "SSHInstance2.pem" centos@ec2-3-137-218-137.us-east-2.compute.amazonaws.com
+
+To install snscrape (Requires python 3.9)
+pip install git+https://github.com/JustAnotherArchivist/snscrape.git
