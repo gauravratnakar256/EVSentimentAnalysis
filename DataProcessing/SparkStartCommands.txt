@@ -20,12 +20,12 @@ Jupyter Notebook Start
 jupyter notebook --ip bigdata --port 8888 --no-browser &
 jupyter notebook stop
 tmux
-http://20.115.20.31:8888/?token=12e26a0f651f3a9e7022ab8c4f8f4dc528bb802d660d7187
+http://20.114.1.100:8888/
 
 bigdata
 
 Hadoop Commands 
-hadoop fs -mkdir /bigdata/data
-hadoop fs -put /home/hadoop/data/CompleteData.json /bigdata/data
+hdfs dfs  -mkdir /bigdata/data
+hdfs dfs  -put /home/bigdata/data/tweets.json /bigdata/data
 
-hdfs://bigdata:9000/bigdata/data/CompleteData.json
+hdfs://bigdata:9000/bigdata/data/tweets.json
